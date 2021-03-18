@@ -81,63 +81,87 @@
 
 
 
-<div class="mainbox bl5" style="background-image: url(<?php echo(base_url( 'assets/public/img/fondo-nebulosa.jpg' )); ?> )">
+<div class="mainbox bl5">
+	<div class="fondoFix" style="background-image: url(<?php echo(base_url( 'assets/public/img/fondo-nebulosa.jpg' )); ?> )"></div>
+	
 	<h2 class="titulo">¡Nuestros <span class="colorMarca">Paquetes</span>!</h2>
-</div>
-
-
-
-<!--
-<div class="mainbox bl1" style="background-image: url(<?php echo(base_url( 'assets/public/img/home_fondo_sec1.jpg' )); ?> )">
-	<div id="mancha">
-		<img src="<?php echo(base_url( 'assets/public/img/mancha.png' )); ?>" />
-	</div>
-	<div id="playeras">
-		<img src="<?php echo(base_url( 'assets/public/img/home_sec1_texto_ropa.png' )); ?>" />
-	</div>
-	<div id="balon2" class="rellax" data-rellax-speed="-2">
-		<img src="<?php echo(base_url( 'assets/public/img/balon2.png' )); ?>" />
-	</div>
-	<div id="balon1" class="rellax" data-rellax-speed="-7">
-		<img src="<?php echo(base_url( 'assets/public/img/balon1.png' )); ?>" />
-	</div>
-</div>
-
-<div class="mainbox bl2">
-	<div id="generos">
-		<img src="<?php echo(base_url( 'assets/public/img/home_sec2_generos.png' )); ?>" />
-		<img class="over3 oculto" id="overHombre" src="<?php echo(base_url( 'assets/public/img/home_sec2_genero_hombre_over.png' )); ?>" />
-		<img class="over3 oculto" id="overMujer" src="<?php echo(base_url( 'assets/public/img/home_sec2_genero_mujer_over.png' )); ?>" />
-		<img class="over3 oculto" id="overNino" src="<?php echo(base_url( 'assets/public/img/home_sec2_genero_nino_over.png' )); ?>" />
-	</div>
-	<div class="cols_box">
-		<div class="cols3 rellax" data-rellax-speed="1">
-			<a id="btnHombre" href="<?php echo(base_url( 'productos/hombres' )); ?>"><div class="btnVerMas">Ver más</div></a>
+	
+	<div id="btnsCompras" class="boxDown">
+		<div class="colPrecios">
+			<div class="boxInfo">
+				<div class="numero">1</div>
+				<div class="texto">Mes</div>
+				<div class="precio">$300</div>
+			</div>
+			<div class="btnComprar">
+				<input id="btn1mes" type="button" value="COMPRAR" class="compra"></input>
+			</div>
 		</div>
-		<div class="cols3 rellax" data-rellax-speed="1">
-			<a id="btnMujer" href="<?php echo(base_url( 'productos/mujeres' )); ?>"><div class="btnVerMas">Ver más</div></a>
+		
+		<div class="colPrecios">
+			<div class="boxInfo">
+				<div class="numero">2</div>
+				<div class="texto">Meses</div>
+				<div class="precio">$580</div>
+			</div>
+			<div class="btnComprar">
+				<input id="btn2mes" type="button" value="COMPRAR" class="compra"></input>
+			</div>
 		</div>
-		<div class="cols3 rellax" data-rellax-speed="1">
-			<a id="btnNino" href="<?php echo(base_url( 'productos/ninos' )); ?>"><div class="btnVerMas">Ver más</div></a>
+		
+		<div class="colPrecios ideal">
+			<div class="boxInfo">
+				<div class="numero">3</div>
+				<div class="texto">Meses</div>
+				<div class="precio">$740</div>
+			</div>
+			<div class="btnComprar">
+				<input id="btn3mes" type="button" value="COMPRAR" class="compra"></input>
+			</div>
 		</div>
-	</div>
-</div>
-
-<div class="mainbox bl3">
-	<div id="fondo_form">
-		<img src="<?php echo(base_url( 'assets/public/img/home_sec3_fondo.png' )); ?>" />
-	</div>
-	<div class="titulo_box">
-		<h4 class="titulo">BUSCA TU EQUIPO</h4>
-		<div class="buscar_box">
-			<input type="text" value=""></input>
-			<div id="btnBuscarUniforme">
-				
+		
+		<div class="colPrecios">
+			<div class="boxInfo">
+				<div class="numero">6</div>
+				<div class="texto">Meses</div>
+				<div class="precio">$1,300</div>
+			</div>
+			<div class="btnComprar">
+				<input id="btn6mes" type="button" value="COMPRAR" class="compra"></input>
 			</div>
 		</div>
 	</div>
 </div>
--->
+
+
+
+
+
+<div class="mainbox bl6">
+	<div class="grafico">
+		<img src="<?php echo(base_url( 'assets/public/img/fondo-prueba.png' )); ?>" />
+	</div>
+	
+	<div class="flotarCentro">
+		<h2 class="titulo">Prueba Gratis</h2>
+		<h3 class="titulo2">Acceso total por 24 horas en una muestra gratis</h3>
+		<input type="button" value="PRUEBA"></input>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
