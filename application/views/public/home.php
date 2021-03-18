@@ -155,6 +155,29 @@
 
 
 
+<div class="mainbox bl7">
+	<h2 class="titulo">Contacto</h2>
+	<h4 class="titulo2">Puedes contactarnos a través del siguiente formulario.</h4>
+	
+	<form id="formulario" action="" method="post" enctype="application/x-www-form-urlencoded">
+		<div class="col2">
+			<div class="p1">
+				<input type="text" name="nombre" id="nombre" placeholder="Nombre" value=""></input>
+				<input type="email" name="correo" id="correo" placeholder="Correo" value=""></input>
+			</div>
+			<div class="p2">
+				<textarea name="comentarios" id="comentarios"></textarea>
+			</div>
+		</div>
+		<input type="button" value="enviar" id="btnForm"></input>
+	</form>
+</div>
+
+
+
+
+
+
 
 
 

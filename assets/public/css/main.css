@@ -1197,6 +1197,18 @@ input[type="button"]:hover{
 			body#home .mainbox.bl6 input[type="button"]{
 				margin-top: 2.5vw;
 			}
+			
+			
+			
+			
+	body#home .mainbox.bl7{
+		height: auto;
+		position: relative;
+		background-color: transparent;
+		padding: 8vw 4vw;
+		overflow: hidden;
+		margin-top: -4vw;
+	}
 	
 	
 	
@@ -1589,7 +1601,100 @@ input[type="button"]:hover{
 
 @media (max-width: 850px){
 	/* Ajustes Globales y del navegador */
+	.onlyDesktop{
+		display: none !important;
+	}
+	.onlyMobile{
+		display: block;
+	}
+	.redes {
+	    justify-content: center;
+	    text-align: center;
+	}
+	#navMobile{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 9888;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 10px 1rem;
+		border-bottom: 1px solid white;
+	}
+		#navMobile #logo{
+			display: flex;
+		    align-self: flex-start;
+		    justify-content: flex-start;
+		    align-items: flex-start;
+		    flex-basis: inherit;
+		}
+			#navMobile #logo img{
+				max-width: 78px;
+			}
+			#navMobileOpen{
+				text-align: right;
+			}
+				#navMobileOpen img{
+					cursor: pointer;
+				}
+	
+	#navExtend{
+		width: 100vw;
+		height: 100vh;
+		position: fixed;
+		top: 0px;
+		left: -100vw;
+		opacity: 0;
+		background-color: var(--colorPrincipal);
+		color: white;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		z-index: 99999;
 		
+		
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+	#navExtend.active{
+		left: 0vw;
+		opacity: 1;
+	}
+		#navExtend #navMobileClose{
+			position: absolute;
+		    right: 1rem;
+		    top: 1rem;
+		    z-index: 999;
+		}
+		#navExtend #menus{
+			flex-direction: column;
+		    align-items: center;
+		    font-size: 160%;
+		    line-height: 2;
+		    letter-spacing: 5px;
+		    text-align: center;
+		}
+		body #navExtend #dir, body#home #navExtend #dir a{
+			color: white;
+		}
+		body #navExtend #dir{
+			font-size: 70%;
+			margin-top: 3rem;
+			letter-spacing: 0px;
+		}
+		body #navExtend .redes .red,
+		body #navExtend #dir .red.linkedIn{
+		    width: 22px;
+		    margin-right: 13px;
+		}
+			body #navExtend .redes .red svg{
+				fill: white;
+			}
 }
 
 
