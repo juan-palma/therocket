@@ -347,7 +347,7 @@ if(property_exists($generalDB, "youtube") && $generalDB->youtube !== ''){
 		</nav>
 		
 		<nav id="navMobile" class="onlyMobile">
-			<div id="logo"><a href="<?php echo(base_url()); ?>"><img src="<?php echo(base_url('assets/public/img/logo_ci_fondo.svg')); ?>"></img></a></div>
+			<div id="logo"><a href="<?php echo(base_url()); ?>"><img src="<?php echo(base_url('assets/public/img/logo.svg')); ?>"></img></a></div>
 			<div id="navMobileOpen">
 				<img src="<?php echo(base_url('assets/public/img/navMobileOpenBtn.svg')); ?>" />
 			</div>
@@ -355,7 +355,7 @@ if(property_exists($generalDB, "youtube") && $generalDB->youtube !== ''){
 		
 		<nav id="navExtend" class="onlyMobile extendNav">
 			<div id="menus">
-				<<a href="javascript:void(0);"><div class="menu">¿Qúe es?</div></a>
+				<a href="javascript:void(0);"><div class="menu">¿Qúe es?</div></a>
 				<a href="javascript:void(0);"><div class="menu">Requisitos</div></a>
 				<a href="javascript:void(0);"><div class="menu">Precios</div></a>
 				<a href="javascript:void(0);"><div class="menu">Prueba</div></a>

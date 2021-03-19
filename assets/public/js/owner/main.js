@@ -407,6 +407,7 @@ function home_inicio(){
 	
 	
 	
+/*
 	var sliderPortafolio = tns({
 		"container": '#portafolios .slideItems',
 		//"autoHeight": true,
@@ -444,12 +445,14 @@ function home_inicio(){
 	var t = setInterval(function(){
 		sliderCliente.goTo('next');
 	}, 1500);
+*/
 
 }
 
 
 
 
+/*
 function home_inicio2(){
 	let generos = ["Hombre", "Mujer", "Nino"];
 	
@@ -461,6 +464,7 @@ function home_inicio2(){
 		});
 	});
 }
+*/
 
 
 
@@ -2355,9 +2359,8 @@ window.addEvent('domready', function(){
 		if(pageActual !== ''){
 			switch(pageActual){
 				case 'home':
-					//home_inicio();
-					var rellax = new Rellax('.rellax');
-					home_inicio2();
+					home_inicio();
+					//var rellax = new Rellax('.rellax');
 				break;
 				
 				case 'productos':
@@ -2415,7 +2418,7 @@ window.addEvent('domready', function(){
 		}
 	}
 	
-	//header_run();
+	header_run();
 	//footer_run();
 	
 });
