@@ -166,10 +166,12 @@
 				<input type="email" name="correo" id="correo" placeholder="Correo" value=""></input>
 			</div>
 			<div class="p2">
-				<textarea name="comentarios" id="comentarios"></textarea>
+				<textarea name="comentarios" id="comentarios" placeholder="Comentarios o Información"></textarea>
 			</div>
 		</div>
-		<input type="button" value="enviar" id="btnForm"></input>
+		<div class="boxBtn">
+			<input type="button" value="enviar" id="btnForm"></input>
+		</div>
 	</form>
 </div>
 

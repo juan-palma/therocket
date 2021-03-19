@@ -1215,6 +1215,77 @@ input[type="button"]:hover{
 		overflow: hidden;
 		margin-top: -4vw;
 	}
+		body#home .mainbox.bl7 h4.titulo2 {
+		    color: white;
+		    margin: 0px 0px 4rem;
+		    text-align: center;
+			line-height: 1.1;
+		}
+		
+		form#formulario {
+		    width: 88%;
+		    max-width: 800px;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		}
+			.col2 {
+			    width: 100%;
+			    display: flex;
+			    flex-direction: row;
+			    align-items: flex-start;
+			    justify-content: center;
+			}
+				.p1 {
+				    width: 50%;
+				    max-width: 50%;
+				    flex: 1 1 0;
+				    display: flex;
+				    flex-direction: column;
+				    align-items: flex-start;
+				    justify-content: flex-start;
+				    padding: 0px 8px;
+				}
+				.p2{
+					height: 93px;
+					width: 50%;
+				    max-width: 50%;
+				    flex: 1 1 0;
+				    padding: 0px 8px;
+				}
+					body#home .mainbox.bl7 input#nombre {
+					    margin-bottom: 16px;
+					}
+					body#home .mainbox.bl7 input, body#home .mainbox.bl7 textarea {
+					    width: 100%;
+					    padding: 6px 14px;
+					    appearance: none;
+					    -webkit-appearance: none;
+					    border: 2px solid white;
+					    border-radius: 4px;
+					    font-weight: bold;
+					    margin: 0px;
+					}
+					body#home .mainbox.bl7 textarea#comentarios {
+					    height: 96px;
+					}
+				
+			.boxBtn {
+			    width: 100%;
+			    padding: 0px 8px;
+			    text-align: right;
+			    margin-top: 16px;
+			}
+				body#home .mainbox.bl7 .boxBtn input#btnForm {
+				    width: 144px;
+				    margin: 0px;
+				    padding: 10px;
+				    border: 2px solid #ff9200;
+				}
+				body#home .mainbox.bl7 .boxBtn input#btnForm:hover {
+				    border: 2px solid #5ac017;
+				}
 	
 	
 	
