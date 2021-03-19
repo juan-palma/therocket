@@ -857,8 +857,8 @@ body#home{
 			animation: hover 2s infinite ease-in-out alternate;
 			width: 26vw;
 			position: absolute;
-			left: 13vw;
-			top: 24vh;
+			left: 11vw;
+			top: 22vh;
 		}
 		@keyframes hover {
 		  0% {
