@@ -104,141 +104,21 @@ $data_servicio_mensaje  =  array (
 		
 		
 		<footer id="footer" class="mainbox">
-<!--
-			<div id="box_footer_sec1">
-				<div class="bl1">
-					si quieres mas<br />
-					personalizacion<br />
-					en tu uniforme o<br />
-					tienes alguna<br />
-					duda  contactanos
-				</div>
-				<div class="bl2">
-					<form id="footerContactoForm" class="">
-						<?php echo form_input( $data_footer_nombre ); ?>
-						<?php echo form_input( $data_footer_mail ); ?>
-						<?php echo form_textarea( $data_servicio_mensaje ); ?>
-						<div id="footerBtnEnviar">
-							<div class="celda">
-								<span id="footerBtnEnviarAccion">ENVIAR</span>
-							</div>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div id="box_footer_sec2">
-				<div id="footer_logo">
-					<img src="<?php echo(base_url('assets/public/img/tocho-logo.svg')); ?>"></img>
-				</div>
-				<div id="footer_redes">
-					<div class="redes">
-						<?php
-							foreach ($footerDB->redes as $i=>$v) {
-								if($v->liga !== ''){
-							?>
-								<div class="red <?php echo($v->red); ?>">
-									<a target="_blank" href="<?php echo($v->liga); ?>">
-										<?php echo( $v->icono); ?>
-									</a>
-								</div>
-							<?php
-								}
-							}
-						?>
-					</div>
-					<div id="footer_legales">
-						Copyright 2020 TOCHO IS LIFE <a href="aviso_de_privacidad">Aviso de privacidad</a>
+			<div class="fooCols">
+				<div class="fooCol fooCol1">
+					<div id="powerBy">
+						PowerBy: <a href="https://idalibre.com/" target="_blank"><span>ID.A libre</span></a>
 					</div>
 				</div>
--->
-			</div>
-<!--
-			<div id="fondo_footer">
-				<img src="<?php echo(base_url( 'assets/public/img/home_sec4_footer_fondo.png' )); ?>" />
-			</div>
--->
-			
-<!--
-			<div class="cotizacion">
-				<h3><?php echo($footerDB->titulo_general); ?></h3>
-				<form id="footerContactoForm" class="">
-					<?php echo form_input( $data_footer_nombre ); ?>
-					<?php echo form_input( $data_footer_mail ); ?>
-					<?php echo form_input( $data_footer_tel ); ?>
-					<?php echo form_dropdown('servicio', $data_footer_servicio_options, 'null', $data_footer_servicio); ?>
-					<?php echo form_textarea( $data_servicio_mensaje ); ?>
-					<div id="footerBtnEnviar">
-						<div class="celda">
-							<span>ENVIAR</span>
-						</div>
-					</div>
-				</form>
-			</div>
--->
-			
-<!--
-			<div id="postulate">
-				<div class="titulo">
-					<h3>POSTÚLATE</h3>
+				<div class="fooCol fooCol2">
+					<a href="<?php echo(base_url('privacidad')); ?>"><div id="btnPoliticas">Política de Privacidad</div></a>
 				</div>
-				<div class="postulate_content">
-					<div class="modelo">
-						<div class="negro">
-							<div class="tituloPostulate">MODELO</div>
-							<a href="<?php echo(base_url('postulate/modelo') ); ?>" target="_self"><div class="portafolioTextoBtn btnVerMas">Ver más</div></a>
-						</div>
-					</div>
-					<div class="alianza">
-						<div class="negro">
-							<div class="tituloPostulate">ALIANZA</div>
-							<a href="<?php echo(base_url('postulate/alianza') ); ?>" target="_self"><div class="portafolioTextoBtn btnVerMas">Ver más</div></a>
-						</div>
+				<div class="fooCol fooCol3">
+					<div class="grafico">
+						<div class="logoFoo"><img src="<?php echo(base_url( 'assets/public/img/logo-guatemala.svg' )); ?>" /></div>
 					</div>
 				</div>
 			</div>
--->
-			
-			
-			<!-- sección HOME ALIANZAS -->
-<!--
-			<section id="alianzas" class="mainbox alianza">
-				<div class="slideMain">
-					<?php
-						if(property_exists($alianzasDB, "titulo_general") && $alianzasDB->titulo_general !== ''){
-					?>
-						<h4 class="alianzaTitulos"><?php echo($alianzasDB->titulo_general); ?></h4>
-					<?php
-						}
-					?>
-								
-					<main class="slideItems">
-						<?php
-						foreach ($alianzasDB->logos as $i=>$v) {
-							?>
-							<div class="logo">
-								<img src="<?php echo( base_url('assets/public/img/alianzas/'.$v->logo) ); ?>" />
-							</div>
-							<?php
-						}
-						?>
-					</main>
-				</div>
-			</section>
--->
-			
-			
-			<!-- sección HOME ALIANZAS -->
-<!--
-			<div id="footer_box_terminos" class="mainbox">
-				<div class="logoFooter">
-					<img src="<?php echo( base_url('assets/public/img/logo_ci_transparente@2x.png') ); ?>" />
-				</div>
-				<div class="footer_terminos">
-					<span class="copyright">© Copyright 2019 </span>
-					<a href="<?php echo(base_url('terminos_condiciones') ); ?>" target="_self"><span class="terminos">Términos y Condiciones</span></a>
-				</div>
-			</div>
--->
 		</footer>
 
 		
