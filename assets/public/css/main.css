@@ -14,13 +14,13 @@
     font-style:normal;font-weight:400;
 }
 @font-face {
-    font-family:"DIN Condensed Bold";
-    src:url("DIN Condensed Bold.woff2") format("woff2"),url("DINCondensed-Bold.woff") format("woff"),url("DINCondensed-Bold.otf") format("opentype");
+    font-family:"DINCondensed-Bold";
+    src:url("DINCondensed-Bold.woff2") format("woff2"),url("DINCondensed-Bold.woff") format("woff"),url("DINCondensed-Bold.otf") format("opentype");
     font-style:normal;font-weight:400;
 }
 @font-face {
-    font-family:"DIN Alternate Bold";
-    src:url("DIN Alternate Bold.woff2") format("woff2"),url("DINAlternate-Bold.woff") format("woff"),url("DINAlternate-Bold.otf") format("opentype");
+    font-family:"DINAlternate-Bold";
+    src:url("DINAlternate-Bold.woff2") format("woff2"),url("DINAlternate-Bold.woff") format("woff"),url("DINAlternate-Bold.otf") format("opentype");
     font-style:normal;font-weight:400;
 }
 @font-face {
@@ -87,7 +87,7 @@ body:before{
 body, h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, .btn-simple, .alert, a, .td-name, td, button.close {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: 'DIN Alternate Bold', Arial, sans-serif;
+    font-family: 'DINAlternate-Bold', Arial, sans-serif;
 }
 body, p, .navbar, .brand, .alert, a, .td-name, td, button.close {
     -moz-osx-font-smoothing: grayscale;
@@ -673,7 +673,7 @@ input[type="button"]:hover{
 			margin: 0px 8px;
 			cursor: pointer;
 			color: white;
-			font-family: 'DIN Alternate Bold';
+			font-family: 'DINAlternate-Bold';
 			
 			-webkit-transition: all 0.2s ease-in-out;
 			-moz-transition: all 0.2s ease-in-out;
@@ -691,18 +691,18 @@ input[type="button"]:hover{
 			display: none;
 		}
 		#menus .postulateAcordeon{
-			font-family: 'DIN Alternate Bold';
+			font-family: 'DINAlternate-Bold';
 		}
 		#menus .menu.postulateAcordeon:after {
 		    content: ">";
 		    position: absolute;
 		    margin-left: 1rem;
 		    transform: rotateZ(90deg) scaleY(2.5);
-		    font-family: 'DIN Alternate Bold';
+		    font-family: 'DINAlternate-Bold';
 		    margin-top: 3px;
 		}
 		#menus .postulateInfo a .menu{
-			font-family: 'DIN Alternate Bold';
+			font-family: 'DINAlternate-Bold';
 			width: 100%;
 			border-top: 1px solid #fff;
 		}
@@ -1125,7 +1125,7 @@ input[type="button"]:hover{
 					body#home .mainbox.bl5 .boxDown .boxInfo .numero {
 					    color: white;
 					    font-size: 4vw;
-					    font-family: "DIN Condensed Bold";
+					    font-family: "DINCondensed-Bold";
 					    text-align: center;
 					    background-color: #0c1e2b;
 					    line-height: 1;
@@ -1140,7 +1140,7 @@ input[type="button"]:hover{
 					}
 					body#home .mainbox.bl5 .boxDown .boxInfo .texto {
 					    background-color: white;
-					    font-family: "DIN Condensed Bold";
+					    font-family: "DINCondensed-Bold";
 					    text-align: center;
 					    font-size: 3vw;
 					}
