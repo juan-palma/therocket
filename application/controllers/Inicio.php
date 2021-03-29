@@ -230,26 +230,26 @@ class Inicio extends CI_Controller {
 		
 		switch($meses){
 			case "1":
-				$monto = 2000;
+				$monto = 95;
 				$nombre = 'Plan 1 mes - The Rocket TV';
 				$imagen = base_url( 'assets/public/img/paquete-1-mes-the-rocket-tv.jpg' );
 			break;
 			
-			case "2":
-				$monto = 3800;
-				$nombre = 'Plan 2 meses - The Rocket TV';
+			case "3":
+				$monto = 242;
+				$nombre = 'Plan 3 meses - The Rocket TV';
 				$imagen = base_url( 'assets/public/img/paquete-2-mes-the-rocket-tv.jpg' );
 			break;
 			
-			case "3":
-				$monto = 7000;
-				$nombre = 'Plan 3 meses - The Rocket TV';
+			case "6":
+				$monto = 427;
+				$nombre = 'Plan 6 meses - The Rocket TV';
 				$imagen = base_url( 'assets/public/img/paquete-3-mes-the-rocket-tv.jpg' );
 			break;
 			
-			case "6":
-				$monto = 13200;
-				$nombre = 'Plan 6 meses - The Rocket TV';
+			case "12":
+				$monto = 798;
+				$nombre = 'Plan 12 meses - The Rocket TV';
 				$imagen = base_url( 'assets/public/img/paquete-6-mes-the-rocket-tv.jpg' );
 			break;
 		}
@@ -268,7 +268,7 @@ class Inicio extends CI_Controller {
 		  'payment_method_types' => ['card'],
 		  'line_items' => [[
 		    'price_data' => [
-		      'currency' => 'usd',
+		      'currency' => 'gtq',
 		      'unit_amount' => $monto,
 		      'product_data' => [
 		        'name' => $nombre,

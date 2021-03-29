@@ -91,7 +91,7 @@
 			<div class="boxInfo">
 				<div class="numero">1</div>
 				<div class="texto">Mes</div>
-				<div class="precio">$300</div>
+				<div class="precio">Q95</div>
 			</div>
 			<div class="btnComprar">
 				<input id="btn1mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/1')); ?>');"></input>
@@ -100,34 +100,34 @@
 		
 		<div class="colPrecios">
 			<div class="boxInfo">
-				<div class="numero">2</div>
+				<div class="numero">3</div>
 				<div class="texto">Meses</div>
-				<div class="precio">$580</div>
+				<div class="precio">Q242</div>
 			</div>
 			<div class="btnComprar">
-				<input id="btn2mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/2')); ?>');"></input>
+				<input id="btn2mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/3')); ?>');"></input>
 			</div>
 		</div>
 		
 		<div class="colPrecios ideal">
 			<div class="boxInfo">
-				<div class="numero">3</div>
+				<div class="numero">6</div>
 				<div class="texto">Meses</div>
-				<div class="precio">$740</div>
+				<div class="precio">Q427</div>
 			</div>
 			<div class="btnComprar">
-				<input id="btn3mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/3')); ?>');"></input>
+				<input id="btn3mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/6')); ?>');"></input>
 			</div>
 		</div>
 		
 		<div class="colPrecios">
 			<div class="boxInfo">
-				<div class="numero">6</div>
+				<div class="numero">12</div>
 				<div class="texto">Meses</div>
-				<div class="precio">$1,300</div>
+				<div class="precio">Q798</div>
 			</div>
 			<div class="btnComprar">
-				<input id="btn6mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/6')); ?>');"></input>
+				<input id="btn6mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/12')); ?>');"></input>
 			</div>
 		</div>
 	</div>
