@@ -193,8 +193,101 @@ class Inicio extends CI_Controller {
 		$this->load->view('public/footer', $data);
 	}
 	
+	
+	
+	
 	public function send(){
 		
+	}
+	
+	
+	
+	public function pay($meses){
+		echo($meses);
+		
+		// Set your secret key. Remember to switch to your live secret key in production.
+		// See your keys here: https://dashboard.stripe.com/account/apikeys
+		\Stripe\Stripe::setApiKey('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+		
+		$test = \Stripe\PaymentIntent::create([
+		  'amount' => 1000,
+		  'currency' => 'usd',
+		  'payment_method_types' => ['card'],
+		  'receipt_email' => 'soporte@idalibre.com',
+		]);
+		
+		print_r(json_encode($test));
+	}
+	
+	
+	
+	public function paySesion($meses){
+		header('Content-Type: application/json');
+		\Stripe\Stripe::setApiKey('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+		
+		
+		$monto = false;
+		
+		switch($meses){
+			case "1":
+				$monto = 2000;
+				$nombre = 'Plan 1 mes - The Rocket TV';
+				$imagen = base_url( 'assets/public/img/paquete-1-mes-the-rocket-tv.jpg' );
+			break;
+			
+			case "2":
+				$monto = 3800;
+				$nombre = 'Plan 2 meses - The Rocket TV';
+				$imagen = base_url( 'assets/public/img/paquete-2-mes-the-rocket-tv.jpg' );
+			break;
+			
+			case "3":
+				$monto = 7000;
+				$nombre = 'Plan 3 meses - The Rocket TV';
+				$imagen = base_url( 'assets/public/img/paquete-3-mes-the-rocket-tv.jpg' );
+			break;
+			
+			case "6":
+				$monto = 13200;
+				$nombre = 'Plan 6 meses - The Rocket TV';
+				$imagen = base_url( 'assets/public/img/paquete-6-mes-the-rocket-tv.jpg' );
+			break;
+		}
+		
+		if($monto === false){
+			echo json_encode(['id' => 'null']);
+			return false;
+		}
+		
+		
+		
+		
+		$YOUR_DOMAIN = base_url('pago');
+		
+		$checkout_session = \Stripe\Checkout\Session::create([
+		  'payment_method_types' => ['card'],
+		  'line_items' => [[
+		    'price_data' => [
+		      'currency' => 'usd',
+		      'unit_amount' => $monto,
+		      'product_data' => [
+		        'name' => $nombre,
+		        'images' => [$imagen]
+		      ]
+		    ],
+		    'quantity' => 1
+		  ]],
+		  'mode' => 'payment',
+		  'success_url' => $YOUR_DOMAIN . '/exito',
+		  'cancel_url' => $YOUR_DOMAIN . '/cancelado'
+		]);
+		
+		//$this->session->set_userdata('userPaySession', $checkout_session->id);
+		$this->session->set_flashdata('userPaySession', $checkout_session->id);
+		$this->session->set_flashdata('userPayPaquete', $meses);
+		
+		echo json_encode(['id' => $checkout_session->id]);
+				
 	}
 		
 		

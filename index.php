@@ -5,6 +5,10 @@
 |--------------------------------------------------------------------------
 | Cargaremos las variables de entorno para que se encuentren accesibles para todas las secciones. 
 */
+use Slim\Http\Request;
+use Slim\Http\Response;
+use Stripe\Stripe;
+		
 require('application/vendor/autoload.php');
 $dotenv = Dotenv\Dotenv::create(dirname(__DIR__));
 $dotenv -> load();

@@ -125,14 +125,15 @@ $data_servicio_mensaje  =  array (
 		
 		
 		<!-- Carga de librerias !!.. -->
-		<script src="https://sdks.shopifycdn.com/js-buy-sdk/v2/latest/index.umd.min.js"></script>
+<!-- 		<script src="https://sdks.shopifycdn.com/js-buy-sdk/v2/latest/index.umd.min.js"></script> -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
-		<script src="https://player.vimeo.com/api/player.js"></script>
+<!-- 		<script src="https://player.vimeo.com/api/player.js"></script> -->
+		<script src="https://js.stripe.com/v3/"></script>
 		
 		<script src="<?php echo(base_url('assets/common/js/librerias/plugins/sweetalert2.min.js')) ?>" type="text/javascript"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.js"></script>
 		<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/min/tiny-slider.helper.ie8.js"></script><![endif]-->
-		<script src="<?php echo(base_url('assets/common/js/librerias/rellax.min.js')) ?>"></script>
+<!-- 		<script src="<?php echo(base_url('assets/common/js/librerias/rellax.min.js')) ?>"></script> -->
 		<script src="<?php echo(base_url('assets/common/js/librerias/mootools-core.js')) ?>"></script>
 		<script src="<?php echo(base_url('assets/common/js/librerias/mootools-more.js')) ?>"></script>
 		<script src="<?php echo(base_url('assets/common/js/librerias/plugins.js')) ?>"></script>

@@ -14,9 +14,11 @@ class ComposerStaticInitcfeab751bb8cf276768d9e11ff694af7
         'S' => 
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Stripe\\' => 7,
         ),
         'P' => 
         array (
+            'PhpOption\\' => 10,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
         'D' => 
@@ -30,6 +32,14 @@ class ComposerStaticInitcfeab751bb8cf276768d9e11ff694af7
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Stripe\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
+        ),
+        'PhpOption\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpoption/phpoption/src/PhpOption',
+        ),
         'PHPMailer\\PHPMailer\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
@@ -40,14 +50,8 @@ class ComposerStaticInitcfeab751bb8cf276768d9e11ff694af7
         ),
     );
 
-    public static $prefixesPsr0 = array (
-        'P' => 
-        array (
-            'PhpOption\\' => 
-            array (
-                0 => __DIR__ . '/..' . '/phpoption/phpoption/src',
-            ),
-        ),
+    public static $classMap = array (
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
@@ -55,7 +59,7 @@ class ComposerStaticInitcfeab751bb8cf276768d9e11ff694af7
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitcfeab751bb8cf276768d9e11ff694af7::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitcfeab751bb8cf276768d9e11ff694af7::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitcfeab751bb8cf276768d9e11ff694af7::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInitcfeab751bb8cf276768d9e11ff694af7::$classMap;
 
         }, null, ClassLoader::class);
     }

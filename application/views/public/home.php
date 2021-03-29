@@ -94,7 +94,7 @@
 				<div class="precio">$300</div>
 			</div>
 			<div class="btnComprar">
-				<input id="btn1mes" type="button" value="COMPRAR" class="compra"></input>
+				<input id="btn1mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/1')); ?>');"></input>
 			</div>
 		</div>
 		
@@ -105,7 +105,7 @@
 				<div class="precio">$580</div>
 			</div>
 			<div class="btnComprar">
-				<input id="btn2mes" type="button" value="COMPRAR" class="compra"></input>
+				<input id="btn2mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/2')); ?>');"></input>
 			</div>
 		</div>
 		
@@ -116,7 +116,7 @@
 				<div class="precio">$740</div>
 			</div>
 			<div class="btnComprar">
-				<input id="btn3mes" type="button" value="COMPRAR" class="compra"></input>
+				<input id="btn3mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/3')); ?>');"></input>
 			</div>
 		</div>
 		
@@ -127,7 +127,7 @@
 				<div class="precio">$1,300</div>
 			</div>
 			<div class="btnComprar">
-				<input id="btn6mes" type="button" value="COMPRAR" class="compra"></input>
+				<input id="btn6mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/6')); ?>');"></input>
 			</div>
 		</div>
 	</div>
@@ -145,7 +145,7 @@
 	<div class="flotarCentro">
 		<h2 class="titulo">Prueba Gratis</h2>
 		<h3 class="titulo2 onlyDesktop">Acceso total por 24 horas en una muestra gratis</h3>
-		<input type="button" value="PRUEBA"></input>
+		<input id="btnFormEnviar" type="button" value="PRUEBA"></input>
 	</div>
 </div>
 
@@ -162,11 +162,11 @@
 	<form id="formulario" action="" method="post" enctype="application/x-www-form-urlencoded">
 		<div class="col2">
 			<div class="p1">
-				<input type="text" name="nombre" id="nombre" placeholder="Nombre" value=""></input>
-				<input type="email" name="correo" id="correo" placeholder="Correo" value=""></input>
+				<input type="text" name="nombre" id="nombre" placeholder="Nombre" value="" autocomplete="off" class="validaciones vc form-control input-lg" data-validar="texto"></input>
+				<input type="email" name="correo" id="correo" placeholder="Correo" value="" autocomplete="off" class="validaciones vc form-control input-lg" data-validar="correo"></input>
 			</div>
 			<div class="p2">
-				<textarea name="comentarios" id="comentarios" placeholder="Comentarios o Información"></textarea>
+				<textarea name="comentarios" id="comentarios" placeholder="Comentarios o Información" autocomplete="off" class="validaciones vc form-control input-lg" data-validar="correo"></textarea>
 			</div>
 		</div>
 		<div class="boxBtn">
