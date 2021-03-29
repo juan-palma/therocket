@@ -223,7 +223,7 @@ class Inicio extends CI_Controller {
 	
 	public function paySesion($meses){
 		header('Content-Type: application/json');
-		\Stripe\Stripe::setApiKey('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
+		\Stripe\Stripe::setApiKey('sk_test_51IZ67TAqsKs1mUJ42OKj75pYhm8tk5vH6tnup7g8OmUPR3mmdGnrbD8LdyHDAtSNjVENHUK3S7weciIJSyM1UCqE00voxfz5pZ');
 		
 		
 		$monto = false;
