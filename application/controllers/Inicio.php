@@ -230,25 +230,25 @@ class Inicio extends CI_Controller {
 		
 		switch($meses){
 			case "1":
-				$monto = 95;
+				$monto = 9500;
 				$nombre = 'Plan 1 mes - The Rocket TV';
 				$imagen = base_url( 'assets/public/img/paquete-1-mes-the-rocket-tv.jpg' );
 			break;
 			
 			case "3":
-				$monto = 242;
+				$monto = 24200;
 				$nombre = 'Plan 3 meses - The Rocket TV';
 				$imagen = base_url( 'assets/public/img/paquete-2-mes-the-rocket-tv.jpg' );
 			break;
 			
 			case "6":
-				$monto = 427;
+				$monto = 42700;
 				$nombre = 'Plan 6 meses - The Rocket TV';
 				$imagen = base_url( 'assets/public/img/paquete-3-mes-the-rocket-tv.jpg' );
 			break;
 			
 			case "12":
-				$monto = 798;
+				$monto = 79800;
 				$nombre = 'Plan 12 meses - The Rocket TV';
 				$imagen = base_url( 'assets/public/img/paquete-6-mes-the-rocket-tv.jpg' );
 			break;
