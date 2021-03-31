@@ -9,32 +9,30 @@
 	
 	$idaMail_data['bcc'] = array();
 	$idaMail_data['bcc'][] = 'soporte@idalibre.com';
-	$idaMail_data['bcc'][] = 'monserrat@radicaltesta.com';
-	
-	$idaMail_data['origen_nombre'] = 'Contacto - Circulo de Imagen';
-	$idaMail_data['origen_mail'] = 'informes@idalibre.com';
-	$idaMail_data['reply_nombre'] = 'Sistema - Circulo de Imagen';
-	$idaMail_data['reply_mail'] = 'informes@idalibre.com';
-	$idaMail_data['organizacion'] = 'Circulo de Imagen';
-	$idaMail_data['asunto'] = 'Nuevo contacto desde sitio WEB Circulo de Imagen';
+		
+	$idaMail_data['origen_nombre'] = 'Sistema - The Rocket TV';
+	$idaMail_data['origen_mail'] = 'sistema@therocket.tv';
+	$idaMail_data['reply_nombre'] = 'Sistema - The Rocket TV';
+	$idaMail_data['reply_mail'] = 'soporte@therocket.tv';
+	$idaMail_data['organizacion'] = 'The Rocket TV';
+	$idaMail_data['asunto'] = 'Nuevo contacto desde sitio WEB The Rocket TV';
 	
 	$idaMail_data['priority'] = 3;
 	$idaMail_data['encoding'] = 'quoted-printable';
 	
-	$idaMail_data['host'] = 'ci.com.mx';
+	$idaMail_data['host'] = 'therocket.tv';
 	$idaMail_data['port'] = 465;
-	$idaMail_data['username'] = 'contacto@ci.com.mx';
-	$idaMail_data['password'] = 'Nm2019';
+	$idaMail_data['username'] = 'sistema@therocket.tv';
+	$idaMail_data['password'] = 'nsYb33-7H3kd0-N0vP';
 		
 	
 	$idaMail_data['texto_plano'] = '
-		Circulo de Imagen:
+		The Rocket TV
 		
 		Nuevo contacto.
 				
 		* * * * * *
 
-		
 		[ fin ]
 	';
 ?>

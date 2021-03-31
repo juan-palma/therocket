@@ -1036,6 +1036,18 @@ input[type="button"]:hover{
 	color: white;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: black !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black !important;
+}
+
 
 
 	body#home .mainbox.bl4{
@@ -1271,7 +1283,7 @@ input[type="button"]:hover{
 					    margin: 0px;
 					}
 					body#home .mainbox.bl7 textarea#comentarios {
-					    height: 112px;
+					    height: 126px;
 					    outline: none;
 					}
 				
@@ -1366,6 +1378,77 @@ input[type="button"]:hover{
 		
 		
 		
+
+
+body#exito .mainbox.bl1{
+	background-size: cover;
+	height: auto;
+	min-height: calc(100vh - 2.4rem);
+}
+body#exito .mainbox.bl1:before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+}
+	body#exito #textoLogo{
+		position: relative;
+	}
+		body#exito .mainbox.bl1 #textoIntro {
+		    font-size: 5vw;
+		    color: chartreuse;
+		}
+		body#exito .mainbox.bl1 p{
+			color: white;
+		    font-size: 2vw;
+		    margin-top: 3rem;
+		    text-align: center;
+		}
+		
+		
+		
+		
+
+
+
+
+body#cancelado .mainbox.bl1{
+	background-size: cover;
+	height: auto;
+	min-height: calc(100vh - 2.4rem);
+}
+body#cancelado .mainbox.bl1:before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 0;
+}
+	body#cancelado #textoLogo{
+		position: relative;
+	}
+		body#cancelado .mainbox.bl1 #textoIntro {
+		    font-size: 5vw;
+		    color: red;
+		}
+		body#cancelado .mainbox.bl1 p{
+			color: white;
+		    font-size: 2vw;
+		    margin-top: 3rem;
+		    text-align: center;
+		    width: 80%;
+		}
+
+
 
 
 

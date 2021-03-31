@@ -238,13 +238,13 @@ class Inicio extends CI_Controller {
 			case "3":
 				$monto = 24200;
 				$nombre = 'Plan 3 meses - The Rocket TV';
-				$imagen = base_url( 'assets/public/img/paquete-2-mes-the-rocket-tv.jpg' );
+				$imagen = base_url( 'assets/public/img/paquete-3-mes-the-rocket-tv.jpg' );
 			break;
 			
 			case "6":
 				$monto = 42700;
 				$nombre = 'Plan 6 meses - The Rocket TV';
-				$imagen = base_url( 'assets/public/img/paquete-3-mes-the-rocket-tv.jpg' );
+				$imagen = base_url( 'assets/public/img/paquete-6-mes-the-rocket-tv.jpg' );
 			break;
 			
 			case "12":

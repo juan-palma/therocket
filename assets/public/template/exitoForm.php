@@ -5,7 +5,7 @@ $ida_mail_templateHTML = '
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>'. $info["empresa"] .'</title>
+	<title>Inmotion Contacto Formulario</title>
 	<style type="text/css">
 	.blue-background{
 		background-color: #006FCF;
@@ -22,7 +22,7 @@ $ida_mail_templateHTML = '
 </style>
 </head>
 
-<body style="background-color: #5d5d5d; margin: 0px; padding: 0px; text-align: center;">
+<body style="background-color: #ff6600; margin: 0px; padding: 0px; text-align: center;">
 	<table width="800" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, Arial;  font-size: 18px; margin: 0px auto; padding: 0px; background-color: white" align="center";>
 		<tr>
 			<td style="width: 100%; padding: 0px 2rem; text-align: center;">
@@ -31,22 +31,20 @@ $ida_mail_templateHTML = '
 		</tr>
 		<tr style="text-align: center">
 			<td style="width: 70%; padding: 0px 2rem; text-align: left; display: block; margin: 0px auto;" align="center">
-				<h2 style="color: #ff6600;">Mail - Postulado para ALIANZA</h2>
+				<h2 style="color: #ff6600;">Mail - Contacto</h2>
 				
 				<span style="color: #666; font-size: 90%;">
 					A continuación encontrara la información que se ha dejado suministrada a travez de su sitio web <i>'. $info["sitio"] .'</i> en su formulario de contacto:
 				</span>
 				
-				<div style="color: #666; margin-top: 34px; margin-bottom: 34px;">
-					Empresa: <b>'. $info["empresaAlianza"].'</b>,<br />
-					Razón Social: <b>'. $info["razon"].'</b>,<br />
-					Telefono: <b>'. $info["tel"] .'</b>,<br />
+				<div style="color: #666; margin-top: 34px">
 					Correo: <b>'. $info["mail"] .'</b>,<br />
 					<hr />
-					Servicios Seleccionados:<br />
-					<div style="width: 100%; display: block; padding: 1rem 0rem;">'. $info["servicios"] .'</div>
+					Mensaje:<br />
+					<b>'. $info["mensaje"] .'</b>.<br />
 				</div>
 				
+				<div style="padding: 6.6rem 0px;"></div>
 			</td>
 		</tr>
 		
@@ -72,5 +70,6 @@ $ida_mail_templateHTML = '
 		</tr>
 	</table>
 </body>
+
 </html>';
 ?>
