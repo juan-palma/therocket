@@ -321,11 +321,11 @@ if(property_exists($generalDB, "youtube") && $generalDB->youtube !== ''){
 			
 			<div id="menus">
 <!-- 				<a href="<?php echo(base_url('servicios')); ?>"><div class="menu">Requisitos</div></a> -->
-				<a href="javascript:void(0);"><div class="menu">¿Qúe es?</div></a>
-				<a href="javascript:void(0);"><div class="menu">Requisitos</div></a>
-				<a href="javascript:void(0);"><div class="menu">Precios</div></a>
-				<a href="javascript:void(0);"><div class="menu">Prueba</div></a>
-				<a href="javascript:void(0);"><div class="menu">Contacto</div></a>
+				<a href="javascript:void(0);"><div id="quees" class="menu">¿Qúe es?</div></a>
+				<a href="javascript:void(0);"><div id="requisitos" class="menu">Requisitos</div></a>
+				<a href="javascript:void(0);"><div id="precios" class="menu">Precios</div></a>
+				<a href="javascript:void(0);"><div id="prueba" class="menu">Prueba</div></a>
+				<a href="javascript:void(0);"><div id="contacto" class="menu">Contacto</div></a>
 				
 				<div class="redes">
 					<?php

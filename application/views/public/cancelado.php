@@ -13,6 +13,6 @@
 			Cancelaste tu proceso o por algún motivo no se completo, esperamos que pronto puedas disfrutar de un mundo de entretenimiento illimiitado.
 		</p>
 		<br /><br /><br />
-		<input id="btnFormRegresar" type="button" value="REGRESAR"></input>
+		<input id="btnFormRegresar" type="button" value="REGRESAR" onclick="location.href('<?php echo(base_url()); ?>');"></input>
 	</div>
 </div>

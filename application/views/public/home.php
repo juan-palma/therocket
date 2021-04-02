@@ -16,7 +16,7 @@
 
 
 
-<div class="mainbox bl2">
+<div id="anclaQueEs" class="mainbox bl2">
 	<h2 class="titulo">¿Qué es <span class="colorMarca">The Rocket TV</span>?</h2>
 	<div class="col2">
 		<div class="texto">
@@ -52,15 +52,15 @@
 	</p>
 	
 	<div class="btnBox">
-		<input type="button" value="PRUEBA"></input>
-		<input type="button" value="COMPRAR" class="compra"></input>
+		<input id="btnGoPrueba" type="button" value="PRUEBA"></input>
+		<input id="btnGoCompra" type="button" value="COMPRAR" class="compra"></input>
 	</div>
 </div>
 
 
 
 
-<div class="mainbox bl4">
+<div id="anclaRequisitos" class="mainbox bl4">
 	<div class="triangulo"></div>
 	<h2 class="titulo">¡Requisitos de <span class="colorMarca">Instalación</span>!</h2>
 	<h3>En pocos pasos podrás disfrutar de miles de horas de entretenimiento.</h3>
@@ -81,7 +81,7 @@
 
 
 
-<div class="mainbox bl5">
+<div id="anclaPrecios" class="mainbox bl5">
 	<div class="fondoFix" style="background-image: url(<?php echo(base_url( 'assets/public/img/fondo-nebulosa.jpg' )); ?> )"></div>
 	
 	<h2 class="titulo">¡Nuestros <span class="colorMarca">Paquetes</span>!</h2>
@@ -137,7 +137,7 @@
 
 
 
-<div class="mainbox bl6">
+<div id="anclaPrueba" class="mainbox bl6">
 	<div class="grafico">
 		<img src="<?php echo(base_url( 'assets/public/img/fondo-prueba.png' )); ?>" />
 	</div>
@@ -155,7 +155,7 @@
 
 
 
-<div class="mainbox bl7">
+<div id="anclaContacto" class="mainbox bl7">
 	<h2 class="titulo">Contacto</h2>
 	<h4 class="titulo2">Puedes contactarnos a través del siguiente formulario.</h4>
 	

@@ -222,11 +222,32 @@ function header_run(){
 	    }
 	});
 	
-/*
-	document.id('btnMenuCliente').addEvent('click', function(){
-		scrollFX.toElement(document.id('clientes'), 'y');
+	document.id('quees').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaQueEs'), 'y');
 	});
-*/
+	
+	document.id('requisitos').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaRequisitos'), 'y');
+	});
+	
+	document.id('precios').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaPrecios'), 'y');
+	});
+	document.id('btnGoCompra').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaPrecios'), 'y');
+	});
+	
+	document.id('prueba').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaPrueba'), 'y');
+	});
+	document.id('btnGoPrueba').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaPrueba'), 'y');
+	});
+	
+	
+	document.id('contacto').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaContacto'), 'y');
+	});
 }
 
 
@@ -593,6 +614,7 @@ window.addEvent('domready', function(){
 			switch(pageActual){
 				case 'home':
 					mail_run();
+					header_run();
 					//var rellax = new Rellax('.rellax');
 				break;
 				
@@ -600,7 +622,7 @@ window.addEvent('domready', function(){
 		}
 	}
 	
-	header_run();
+	
 });
 
 

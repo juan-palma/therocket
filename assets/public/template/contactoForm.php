@@ -8,7 +8,7 @@ $ida_mail_templateHTML = '
 	<title>Inmotion Contacto Formulario</title>
 	<style type="text/css">
 	.blue-background{
-		background-color: #006FCF;
+		background-color: #000;
 		color: #fff; 
 	}
 	.media-hide{
@@ -22,7 +22,7 @@ $ida_mail_templateHTML = '
 </style>
 </head>
 
-<body style="background-color: #ff6600; margin: 0px; padding: 0px; text-align: center;">
+<body style="background-color: #000; margin: 0px; padding: 0px; text-align: center;">
 	<table width="800" border="0" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, Arial;  font-size: 18px; margin: 0px auto; padding: 0px; background-color: white" align="center";>
 		<tr>
 			<td style="width: 100%; padding: 0px 2rem; text-align: center;">
