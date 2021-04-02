@@ -14,6 +14,6 @@
 			Felicidades, esta a un paso de disfrutar un mundo de entretenimiento
 		</p>
 		<br /><br /><br />
-		<input id="btnFormRegresar" type="button" value="REGRESAR" onclick="location.href('<?php echo(base_url()); ?>');"></input>
+		<input id="btnFormRegresar" type="button" value="REGRESAR" onclick="window.location.replace('<?php echo(base_url()); ?>');"></input>
 	</div>
 </div>

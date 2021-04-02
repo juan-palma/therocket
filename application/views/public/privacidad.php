@@ -55,6 +55,6 @@
 		<p>Para obtener más información sobre nuestras prácticas de privacidad, si tiene preguntas o si desea presentar una queja, comuníquese con nosotros por correo electrónico a contacto@therocket.tv</p> 
 		
 		<br /><br /><br />
-		<input id="btnFormRegresar" type="button" value="REGRESAR" onclick="location.href('<?php echo(base_url()); ?>');"></input>
+		<input id="btnFormRegresar" type="button" value="REGRESAR" onclick="window.location.replace('<?php echo(base_url()); ?>');"></input>
 	</div>
 </div>
