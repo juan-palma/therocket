@@ -145,7 +145,7 @@
 	<div class="flotarCentro">
 		<h2 class="titulo">Prueba Gratis</h2>
 		<h3 class="titulo2 onlyDesktop">Acceso total por 24 horas en una muestra gratis</h3>
-		<input id="btnFormEnviar" type="button" value="PRUEBA"></input>
+		<input id="btnPedirPrueba" type="button" value="PRUEBA"></input>
 	</div>
 </div>
 

@@ -244,9 +244,12 @@ function header_run(){
 		scrollFX.toElement(document.id('anclaPrueba'), 'y');
 	});
 	
-	
 	document.id('contacto').addEvent('click', function(){
 		scrollFX.toElement(document.id('anclaContacto'), 'y');
+	});
+	
+	document.id('btnPedirPrueba').addEvent('click', function(){
+		alert("Si deseas una prueba de 24 horas dirigete al formulario de contacto al final del sitio y mandanos un texto de 'Solicito Prueba'.");
 	});
 }
 
