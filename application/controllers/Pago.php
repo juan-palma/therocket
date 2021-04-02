@@ -73,13 +73,7 @@ class Pago extends CI_Controller {
 		$idaMail_data['reply_mail'] = $cleanObjecDB->correo;
 		$idaMail_data['username'] = $cleanObjecDB->correo_form;
 		$idaMail_data['password'] = $cleanObjecDB->correo_pass;
-		
-		$idaMail_data['destino_mail'][] = "soporte@idalibre.com";
-		$idaMail_data['origen_mail'] = "soporte@idalibre.com";
-		$idaMail_data['reply_mail'] = "soporte@idalibre.com";
-		$idaMail_data['username'] = "soporte@idalibre.com";
-		$idaMail_data['password'] = 'Soporte.libre';
-		
+				
 		
 		$template = FCPATH.'assets/public/template/exitoForm.php';
 		$info = array();
