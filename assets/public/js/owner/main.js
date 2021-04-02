@@ -414,10 +414,9 @@ function mail_run(){
 		validar: {
 			parametro: 'texto'
 		},
-			funciones: {
-			nombre: 'mayusculas'
+		funciones: {
+// 			nombre: 'mayusculas'
 		},
-	
 		nulo: {
 			status: false,
 			valores: {

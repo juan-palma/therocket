@@ -166,7 +166,7 @@
 				<input type="email" name="correo" id="correo" placeholder="Correo" value="" autocomplete="off" class="validaciones vc form-control input-lg" data-validar="correo"></input>
 			</div>
 			<div class="p2">
-				<textarea name="comentarios" id="comentarios" placeholder="Comentarios o Información" autocomplete="off" class="validaciones vc form-control input-lg" data-validar="correo"></textarea>
+				<textarea name="comentarios" id="comentarios" placeholder="Comentarios o Información" autocomplete="off" class="validaciones vc form-control input-lg" data-validar="texto"></textarea>
 			</div>
 		</div>
 		<div class="boxBtn">
