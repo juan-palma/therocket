@@ -17,7 +17,7 @@
 		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 				
 		<title><?php echo($titulo); ?> | Panel de administración</title>
-		<meta name="description" content="Sistema AMEX - GAM | Sistema de administración, control y seguimiento de la información" />
+		<meta name="description" content="Sistema de administración, control y seguimiento de la información" />
 
 					
 		<meta name="dcterms.audience" content="Global" />

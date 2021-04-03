@@ -71,17 +71,4 @@ $customModuleIcon['general']->icono = "fas fa-window-maximize";
 $customModuleIcon['home'] = (object)[];
 $customModuleIcon['home']->label = "Home";
 $customModuleIcon['home']->icono = "fa fa-home";
-
-$customModuleIcon['portafolios'] = (object)[];
-$customModuleIcon['portafolios']->label = "Portafolios";
-$customModuleIcon['portafolios']->icono = "fas fa-suitcase";
-
-$customModuleIcon['servicios'] = (object)[];
-$customModuleIcon['servicios']->label = "Servicios";
-$customModuleIcon['servicios']->icono = "fas fa-briefcase";
-
-$customModuleIcon['vacantes'] = (object)[];
-$customModuleIcon['vacantes']->label = "Vacantes";
-$customModuleIcon['vacantes']->icono = "fas fa-newspaper";
-
 ?>
