@@ -31,7 +31,7 @@ $ida_mail_templateHTML = '
 		</tr>
 		<tr style="text-align: center">
 			<td style="width: 70%; padding: 0px 2rem; text-align: left; display: block; margin: 0px auto;" align="center">
-				<h2 style="color: #ff6600;">Mail - Contacto</h2>
+				<h2 style="color: #ff6600;">Mail - Pago Realizado</h2>
 				
 				<span style="color: #666; font-size: 90%;">
 					A continuación encontrara la información que se ha dejado suministrada a travez de su sitio web <i>'. $info["sitio"] .'</i> en su formulario de contacto:

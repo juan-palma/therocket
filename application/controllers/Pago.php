@@ -69,6 +69,7 @@ class Pago extends CI_Controller {
 		require(VIEWPATH.'admin/customers_parametros.php');
 				
 		$idaMail_data['destino_mail'][] = $correoUser;
+		$idaMail_data['bcc'][] = "contratar@therocket.tv";
 		$idaMail_data['origen_mail'] = $cleanObjecDB->correo_form;
 		$idaMail_data['reply_mail'] = $cleanObjecDB->correo;
 		$idaMail_data['username'] = $cleanObjecDB->correo_form;
