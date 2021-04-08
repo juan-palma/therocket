@@ -60,28 +60,12 @@ class Inicio extends CI_Controller {
 	
 	
 	
-	public function pay($meses){
-		echo($meses);
-		
-		// Set your secret key. Remember to switch to your live secret key in production.
-		// See your keys here: https://dashboard.stripe.com/account/apikeys
-		\Stripe\Stripe::setApiKey('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
-		
-		$test = \Stripe\PaymentIntent::create([
-		  'amount' => 1000,
-		  'currency' => 'usd',
-		  'payment_method_types' => ['card'],
-		  'receipt_email' => 'soporte@idalibre.com',
-		]);
-		
-		print_r(json_encode($test));
-	}
 	
 	
 	
 	public function paySesion($meses){
 		header('Content-Type: application/json');
-		\Stripe\Stripe::setApiKey('sk_test_51IZ67TAqsKs1mUJ42OKj75pYhm8tk5vH6tnup7g8OmUPR3mmdGnrbD8LdyHDAtSNjVENHUK3S7weciIJSyM1UCqE00voxfz5pZ');
+		\Stripe\Stripe::setApiKey(getenv('ROCKET_STRIPE_S'));
 		
 		
 		$monto = false;

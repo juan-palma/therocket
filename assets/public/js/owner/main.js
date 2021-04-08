@@ -571,7 +571,7 @@ var normalize = (function() {
 
 function goPay(dir){
 	
-	var stripe = Stripe('pk_test_51IZ67TAqsKs1mUJ4bSE4wkWmvBfvvMRoN6Ebx6RM4UMRarPxjwpaT77VM67B5LDswzKnrQeUiQ8X0gtH4lVwwDT900Srx0TpZu');
+	var stripe = Stripe(rscp);
 	
     fetch(dir, {
         method: 'POST',

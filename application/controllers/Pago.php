@@ -14,7 +14,7 @@ class Pago extends CI_Controller {
 		try {
 			if($this->session->flashdata('userPaySession') === null){ redirect(base_url()); }
 			
-		    $stripe = new \Stripe\StripeClient( 'sk_test_51IZ67TAqsKs1mUJ42OKj75pYhm8tk5vH6tnup7g8OmUPR3mmdGnrbD8LdyHDAtSNjVENHUK3S7weciIJSyM1UCqE00voxfz5pZ' );
+		    $stripe = new \Stripe\StripeClient( getenv('ROCKET_STRIPE_S') );
 			$userSes = $stripe->checkout->sessions->retrieve( $this->session->flashdata('userPaySession'), [] );
 			$correoUser = $userSes->customer_details->email;
 			$pagoUser = $userSes->amount_subtotal;
@@ -111,7 +111,7 @@ class Pago extends CI_Controller {
 		try {
 			if($this->session->flashdata('userPaySession') === null){ redirect(base_url()); }
 			
-		    $stripe = new \Stripe\StripeClient( 'sk_test_51IZ67TAqsKs1mUJ42OKj75pYhm8tk5vH6tnup7g8OmUPR3mmdGnrbD8LdyHDAtSNjVENHUK3S7weciIJSyM1UCqE00voxfz5pZ' );
+		    $stripe = new \Stripe\StripeClient( getenv('ROCKET_STRIPE_S') );
 			$userSes = $stripe->checkout->sessions->retrieve( $this->session->flashdata('userPaySession'), [] );
 			$correoUser = $userSes->customer_details->email;
 			$pagoUser = $userSes->amount_subtotal;

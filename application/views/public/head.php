@@ -46,6 +46,7 @@
 		<script type="text/javascript"> 
 			var pageActual = '<?php echo($actual); ?>';
 			var baseDir = '<?php echo(base_url()); ?>';
+			var rscp = '<?php echo(getenv('ROCKET_STRIPE_P')); ?>';
 		</script>
 			<?php
 		}
