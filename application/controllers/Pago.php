@@ -77,9 +77,10 @@ class Pago extends CI_Controller {
 				
 		
 		$template = FCPATH.'assets/public/template/exitoForm.php';
+		$pagoUserclean = $pagoUser.substr($string, 0, -2);
 		$info = array();
 		$info['mail'] = $correoUser;
-		$info['mensaje'] = "Se proceso con exito tu pago por Q$pagoUser, tu cuenta esta siendo configurada y en breve recibirás un correo con tus datos de acceso para el plan $paqueteUser meses ";
+		$info['mensaje'] = "Se proceso con exito tu pago por Q$pagoUserclean, tu cuenta esta siendo configurada y en breve recibirás un correo con tus datos de acceso para el plan $paqueteUser meses ";
 		$info['logo'] = base_url('assets/public/img/logo.svg');
 		$info['empresa'] = 'The Rocket TV';
 		$info['sitio'] = base_url();

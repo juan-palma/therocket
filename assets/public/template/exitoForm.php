@@ -38,7 +38,6 @@ $ida_mail_templateHTML = '
 				</span>
 				
 				<div style="color: #666; margin-top: 34px">
-					Nombre: <b>'. $info["nombre"] .'</b>,<br />
 					Correo: <b>'. $info["mail"] .'</b>,<br />
 					<hr />
 					Mensaje:<br />
