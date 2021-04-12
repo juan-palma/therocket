@@ -132,7 +132,7 @@ class Pago extends CI_Controller {
 			);
 			$insert = $this->basic_modal->genericInsert('sistema', $valores);
 			
-			print_r($userSes);
+			//print_r($userSes);
 		} catch (Throwable $t) {
 		    // Executed only in PHP 7, will not match in PHP 5.x
 		    //print_r($t);
