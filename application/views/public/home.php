@@ -20,7 +20,7 @@
 	<h2 class="titulo">¿Qué es <span class="colorMarca">The Rocket TV</span>?</h2>
 	<div class="col2">
 		<div class="texto">
-			<p>Sabias que es posible ver todo el contenido de muchísimas plataformas de streaming, pagos por eventos, mas  de 5000 películas, 500 canales de television americana y latinoamericana, box, partidos, conciertos, kids y mucho más.</p>
+			<p>¿Sabias qué? es posible ver todo el contenido de muchísimas plataformas de streaming, pagos por eventos, mas  de 5000 películas, 500 canales de television americana y latinoamericana, box, partidos, conciertos, kids y mucho más.</p>
 			<p>Bueno esto  es <span class="colorMarca">The Rocket TV</span>, un servicio en el que encontraras todo esto por el costo de apenas uno solo de ellos por separado.</p>
 		</div>
 		<div class="grafico">
@@ -47,8 +47,8 @@
 		<img src="<?php echo(base_url( 'assets/public/img/tira-peliculas.jpg' )); ?>" />
 	</div>
 	<p>
-		Series, Películas, Zona Kids, TV<br />
-		Abierta, Documentales y más
+		Series, Películas, Zona Kids,<br />
+		TV Abierta, Documentales y más
 	</p>
 	
 	<div class="btnBox">
@@ -62,14 +62,15 @@
 
 <div id="anclaRequisitos" class="mainbox bl4">
 	<div class="triangulo"></div>
-	<h2 class="titulo">¡Requisitos de <span class="colorMarca">Instalación</span>!</h2>
-	<h3>En pocos pasos podrás disfrutar de miles de horas de entretenimiento.</h3>
+	<h2 class="titulo">¡Puedes <span class="colorMarca">disfrutarlo con</span>!</h2>
+	<h3>Una gran gama que te colocan a solo unos pasos de gozar todo un mundo de entretenmiento.</h3>
 	<div class="col2">
 		<div class="texto">
 			<p>
 				Dispositivos con sistema<br />
 				Android (Celular, TV Box o<br />
-				Firestick)
+				Firestick).
+				Velocidad de internet minima 10MB
 			</p>
 			<img src="<?php echo(base_url( 'assets/public/img/android-logo.svg' )); ?>" />
 		</div>
@@ -102,7 +103,7 @@
 			<div class="boxInfo">
 				<div class="numero">3</div>
 				<div class="texto">Meses</div>
-				<div class="precio">Q242</div>
+				<div class="precio">Q248</div>
 			</div>
 			<div class="btnComprar">
 				<input id="btn2mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/3')); ?>');"></input>
@@ -113,7 +114,7 @@
 			<div class="boxInfo">
 				<div class="numero">6</div>
 				<div class="texto">Meses</div>
-				<div class="precio">Q427</div>
+				<div class="precio">Q428</div>
 			</div>
 			<div class="btnComprar">
 				<input id="btn3mes" type="button" value="COMPRAR" class="compra" onclick="goPay('<?php echo(base_url('inicio/paySesion/6')); ?>');"></input>

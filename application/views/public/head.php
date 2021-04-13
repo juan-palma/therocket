@@ -356,11 +356,11 @@ if(property_exists($generalDB, "youtube") && $generalDB->youtube !== ''){
 		
 		<nav id="navExtend" class="onlyMobile extendNav">
 			<div id="menus">
-				<a href="javascript:void(0);"><div class="menu">¿Qúe es?</div></a>
-				<a href="javascript:void(0);"><div class="menu">Requisitos</div></a>
-				<a href="javascript:void(0);"><div class="menu">Precios</div></a>
-				<a href="javascript:void(0);"><div class="menu">Prueba</div></a>
-				<a href="javascript:void(0);"><div class="menu">Contacto</div></a>
+				<a href="javascript:void(0);"><div id="queesM" class="menu">¿Qúe es?</div></a>
+				<a href="javascript:void(0);"><div id="requisitosM" class="menu">Requisitos</div></a>
+				<a href="javascript:void(0);"><div id="preciosM" class="menu">Precios</div></a>
+				<a href="javascript:void(0);"><div id="pruebaM" class="menu">Prueba</div></a>
+				<a href="javascript:void(0);"><div id="contactoM" class="menu">Contacto</div></a>
 				
 				<div id="dir">
 					<div class="redes">

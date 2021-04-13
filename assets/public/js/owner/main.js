@@ -225,13 +225,25 @@ function header_run(){
 	document.id('quees').addEvent('click', function(){
 		scrollFX.toElement(document.id('anclaQueEs'), 'y');
 	});
+	document.id('queesM').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaQueEs'), 'y');
+		document.id('navExtend').removeClass('active');
+	});
 	
 	document.id('requisitos').addEvent('click', function(){
 		scrollFX.toElement(document.id('anclaRequisitos'), 'y');
 	});
+	document.id('requisitosM').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaRequisitos'), 'y');
+		document.id('navExtend').removeClass('active');
+	});
 	
 	document.id('precios').addEvent('click', function(){
 		scrollFX.toElement(document.id('anclaPrecios'), 'y');
+	});
+	document.id('preciosM').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaPrecios'), 'y');
+		document.id('navExtend').removeClass('active');
 	});
 	document.id('btnGoCompra').addEvent('click', function(){
 		scrollFX.toElement(document.id('anclaPrecios'), 'y');
@@ -240,12 +252,20 @@ function header_run(){
 	document.id('prueba').addEvent('click', function(){
 		scrollFX.toElement(document.id('anclaPrueba'), 'y');
 	});
+	document.id('pruebaM').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaPrueba'), 'y');
+		document.id('navExtend').removeClass('active');
+	});
 	document.id('btnGoPrueba').addEvent('click', function(){
 		scrollFX.toElement(document.id('anclaPrueba'), 'y');
 	});
 	
 	document.id('contacto').addEvent('click', function(){
 		scrollFX.toElement(document.id('anclaContacto'), 'y');
+	});
+	document.id('contactoM').addEvent('click', function(){
+		scrollFX.toElement(document.id('anclaContacto'), 'y');
+		document.id('navExtend').removeClass('active');
 	});
 	
 	document.id('btnPedirPrueba').addEvent('click', function(){
