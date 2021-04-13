@@ -69,7 +69,7 @@
 			<p>
 				Dispositivos con sistema<br />
 				Android (Celular, TV Box o<br />
-				Firestick).
+				Firestick).<br />
 				Velocidad de internet minima 10MB
 			</p>
 			<img src="<?php echo(base_url( 'assets/public/img/android-logo.svg' )); ?>" />
