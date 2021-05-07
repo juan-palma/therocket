@@ -41,6 +41,9 @@
 		<meta name="p:domain_verify" content="92115dc4d60becb13618274218b951f2"/>
 		
 		
+		<script src="//code.jivosite.com/widget/DaIHNyq3st" async></script>
+
+		
 		<?php if(isset($actual) && $actual !== ''){
 			?>
 		<script type="text/javascript"> 
