@@ -41,8 +41,7 @@
 		<meta name="p:domain_verify" content="92115dc4d60becb13618274218b951f2"/>
 		
 		
-<!-- 		<script src="//code.jivosite.com/widget/DaIHNyq3st" async></script> -->
-		<!-- Código de instalación Cliengo para basura@idalibre.com --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/6095eb3e2ae8c0002a6af98f/6095eb402ae8c0002a6af992.js?platform=registration'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
+		<script src="//code.jivosite.com/widget/DaIHNyq3st" async></script>
 
 		
 		<?php if(isset($actual) && $actual !== ''){
