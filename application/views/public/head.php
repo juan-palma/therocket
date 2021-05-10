@@ -39,6 +39,8 @@
 		<!-- Meta Data de verificacion de sitios web. -->
 		<meta name="msvalidate.01" content="ED387E3F99B5758EB607324E9928F951" />
 		<meta name="p:domain_verify" content="92115dc4d60becb13618274218b951f2"/>
+		<!-- ::: meta facebook dominio ::: -->
+		<meta name="facebook-domain-verification" content="753nkw5sub0loeji2s2kp11dt4ggex" />
 		
 		
 		<script src="//code.jivosite.com/widget/DaIHNyq3st" async></script>
