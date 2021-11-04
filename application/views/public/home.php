@@ -179,7 +179,7 @@
 
 
 <div id="whats" class="">
-	<a href="https://wa.me/+5215543747466">
+	<a href="https://wa.me/+5215543747466" target="_blank">
 		<img src="<?php echo(base_url( 'assets/public/img/icono-whatsapp.svg' )); ?>" alt="Contactanos por WhatsApp">
 	</a>
 </div>
