@@ -178,6 +178,12 @@
 
 
 
+<div id="whats" class="">
+	<a href="https://wa.me/+525517327594">
+		<img src="<?php echo(base_url( 'assets/public/img/icono-whatsapp.svg' )); ?>" alt="Contactanos por WhatsApp">
+	</a>
+</div>
+
 
 
 

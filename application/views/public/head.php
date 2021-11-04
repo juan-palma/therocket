@@ -61,7 +61,7 @@
 		<!-- End Facebook Pixel Code -->
 		
 		
-		<script src="//code.jivosite.com/widget/DaIHNyq3st" async></script>
+		<!-- <script src="//code.jivosite.com/widget/DaIHNyq3st" async></script> -->
 
 		
 		<?php if(isset($actual) && $actual !== ''){

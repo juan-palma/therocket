@@ -1685,6 +1685,24 @@ body#privacidad .mainbox.bl1 > div p{
 
 
 
+/*  WhatsApp icono  */
+#whats{
+	width: auto;
+    height: auto;
+	min-width: 82px;
+    display: block;
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 2vw;
+    bottom: 2vw;
+    width: 7vw;
+    z-index: 99999;
+    animation: hover 2s infinite ease-in-out alternate;
+}
+
+
+
 
 
 
