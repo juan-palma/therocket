@@ -14,6 +14,7 @@ $dotenv = Dotenv\Dotenv::create(dirname(__DIR__));
 $dotenv -> load();
 
 
+
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
