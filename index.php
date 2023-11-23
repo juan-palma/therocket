@@ -14,7 +14,6 @@ $dotenv = Dotenv\Dotenv::create(dirname(__DIR__));
 $dotenv -> load();
 
 
-
 /*
  *---------------------------------------------------------------
  * APPLICATION ENVIRONMENT
@@ -32,7 +31,7 @@ $dotenv -> load();
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('production', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : getenv('MY_ENVIRONMENT'));
+	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : getenv('MY_ENVIRONMENT'));
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
