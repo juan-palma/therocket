@@ -62,7 +62,7 @@ class Inicio extends CI_Controller {
 	
 	
 	
-	public function paySesion($meses){};
+	public function paySesion($meses){}
 	// public function paySesion($meses){
 	// 	header('Content-Type: application/json');
 	// 	\Stripe\Stripe::setApiKey(getenv('ROCKET_STRIPE_S'));
