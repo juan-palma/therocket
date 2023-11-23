@@ -31,7 +31,7 @@ $dotenv -> load();
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : getenv('MY_ENVIRONMENT'));
+	define('production', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : getenv('MY_ENVIRONMENT'));
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
