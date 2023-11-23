@@ -62,75 +62,75 @@ class Inicio extends CI_Controller {
 	
 	
 	
-	
-	public function paySesion($meses){
-		header('Content-Type: application/json');
-		\Stripe\Stripe::setApiKey(getenv('ROCKET_STRIPE_S'));
+	public function paySesion($meses){};
+	// public function paySesion($meses){
+	// 	header('Content-Type: application/json');
+	// 	\Stripe\Stripe::setApiKey(getenv('ROCKET_STRIPE_S'));
 		
 		
-		$monto = false;
+	// 	$monto = false;
 		
-		switch($meses){
-			case "1":
-				$monto = 9500;
-				$nombre = 'Plan 1 mes - The Rocket TV';
-				$imagen = base_url( 'assets/public/img/paquete-1-mes-the-rocket-tv.jpg' );
-			break;
+	// 	switch($meses){
+	// 		case "1":
+	// 			$monto = 9500;
+	// 			$nombre = 'Plan 1 mes - The Rocket TV';
+	// 			$imagen = base_url( 'assets/public/img/paquete-1-mes-the-rocket-tv.jpg' );
+	// 		break;
 			
-			case "3":
-				$monto = 24800;
-				$nombre = 'Plan 3 meses - The Rocket TV';
-				$imagen = base_url( 'assets/public/img/paquete-3-mes-the-rocket-tv.jpg' );
-			break;
+	// 		case "3":
+	// 			$monto = 24800;
+	// 			$nombre = 'Plan 3 meses - The Rocket TV';
+	// 			$imagen = base_url( 'assets/public/img/paquete-3-mes-the-rocket-tv.jpg' );
+	// 		break;
 			
-			case "6":
-				$monto = 42800;
-				$nombre = 'Plan 6 meses - The Rocket TV';
-				$imagen = base_url( 'assets/public/img/paquete-6-mes-the-rocket-tv.jpg' );
-			break;
+	// 		case "6":
+	// 			$monto = 42800;
+	// 			$nombre = 'Plan 6 meses - The Rocket TV';
+	// 			$imagen = base_url( 'assets/public/img/paquete-6-mes-the-rocket-tv.jpg' );
+	// 		break;
 			
-			case "12":
-				$monto = 79800;
-				$nombre = 'Plan 12 meses - The Rocket TV';
-				$imagen = base_url( 'assets/public/img/paquete-6-mes-the-rocket-tv.jpg' );
-			break;
-		}
+	// 		case "12":
+	// 			$monto = 79800;
+	// 			$nombre = 'Plan 12 meses - The Rocket TV';
+	// 			$imagen = base_url( 'assets/public/img/paquete-6-mes-the-rocket-tv.jpg' );
+	// 		break;
+	// 	}
 		
-		if($monto === false){
-			echo json_encode(['id' => 'null']);
-			return false;
-		}
-		
-		
+	// 	if($monto === false){
+	// 		echo json_encode(['id' => 'null']);
+	// 		return false;
+	// 	}
 		
 		
-		$YOUR_DOMAIN = base_url('pago');
 		
-		$checkout_session = \Stripe\Checkout\Session::create([
-		  'payment_method_types' => ['card'],
-		  'line_items' => [[
-		    'price_data' => [
-		      'currency' => 'gtq',
-		      'unit_amount' => $monto,
-		      'product_data' => [
-		        'name' => $nombre,
-		        'images' => [$imagen]
-		      ]
-		    ],
-		    'quantity' => 1
-		  ]],
-		  'mode' => 'payment',
-		  'success_url' => $YOUR_DOMAIN . '/exito',
-		  'cancel_url' => $YOUR_DOMAIN . '/cancelado'
-		]);
 		
-		//$this->session->set_userdata('userPaySession', $checkout_session->id);
-		$this->session->set_flashdata('userPaySession', $checkout_session->id);
-		$this->session->set_flashdata('userPayPaquete', $meses);
+	// 	$YOUR_DOMAIN = base_url('pago');
 		
-		echo json_encode(['id' => $checkout_session->id]);
+	// 	$checkout_session = \Stripe\Checkout\Session::create([
+	// 	  'payment_method_types' => ['card'],
+	// 	  'line_items' => [[
+	// 	    'price_data' => [
+	// 	      'currency' => 'gtq',
+	// 	      'unit_amount' => $monto,
+	// 	      'product_data' => [
+	// 	        'name' => $nombre,
+	// 	        'images' => [$imagen]
+	// 	      ]
+	// 	    ],
+	// 	    'quantity' => 1
+	// 	  ]],
+	// 	  'mode' => 'payment',
+	// 	  'success_url' => $YOUR_DOMAIN . '/exito',
+	// 	  'cancel_url' => $YOUR_DOMAIN . '/cancelado'
+	// 	]);
+		
+	// 	//$this->session->set_userdata('userPaySession', $checkout_session->id);
+	// 	$this->session->set_flashdata('userPaySession', $checkout_session->id);
+	// 	$this->session->set_flashdata('userPayPaquete', $meses);
+		
+	// 	echo json_encode(['id' => $checkout_session->id]);
 				
-	}
+	// }
 		
 		
 	
